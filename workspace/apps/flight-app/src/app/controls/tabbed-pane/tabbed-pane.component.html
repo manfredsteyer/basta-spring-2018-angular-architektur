@@ -1,0 +1,9 @@
+<div style="background-color:bisque; padding:20px">
+
+  <span *ngFor="let tab of tabs"><a style="cursor: pointer" (click)="activate(tab.id)">{{tab.title}}</a> | </span>
+
+  <ng-content></ng-content>
+
+  <nav></nav>
+
+</div>
